@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kanico</title>
+	<base href=".">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" type="text/css" href="kanico/layout.css">
+    <link rel="stylesheet" type="text/css" href="kanico/jquery.fancybox.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="kanico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="kanico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="kanico/favicon-16x16.png">
+	<link rel="manifest" href="kanico/site.webmanifest">
+	<link rel="mask-icon" href="kanico/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="main">
+    <div class="head">
+	<header>
+        <div class="Back" style="height:375px;">
+
+              <div style="height:375px;background:url(kanico/headLogo.jpg) center top no-repeat;"></div></div>
+    <!-- Верхняя панель -->
+    <div class="tab"> <button class="tablinks" onclick="openCity(event, 'One')">1-04 > 1-22 Косплей 1 блок - 1</button> 
+    <button class="tablinks" onclick="openCity(event, 'Two')">1-25 >  1-42 Косплей 1 блок - 2</button>
+    <button class="tablinks" onclick="openCity(event, 'Three')">2-04 > 2-22 Косплей 2 блок - 1</button>
+    <button class="tablinks" onclick="openCity(event, 'Four')">2-26 > 2-44 Косплей 2 блок - 2</button>
+    <button class="tablinks" onclick="openCity(event, 'Five')">3-04 > 3-19 Косплей 3 блок - 1</button>
+    <button class="tablinks" onclick="openCity(event, 'Six')">3-23 > 3-37 Косплей 3 блок - 2</button>
+<!--<button class="tablinks" onclick="openCity(event, 'Seven')">2-06 Тематическое</button>
+    <button class="tablinks" onclick="openCity(event, 'Eight')">2-11 Аниме</button>
+    <button class="tablinks" onclick="openCity(event, 'Nine')">2-16 Original</button>
+    <button class="tablinks" onclick="openCity(event, 'Ten')">2-17 Групповое</button>
+    <button class="tablinks" onclick="openCity(event, 'Eleven')">3-01 Экшн</button>
+    <button class="tablinks" onclick="openCity(event, 'Tvelve')">3-06 Game</button>
+    <button class="tablinks"><a href="map.jpg" class="lightzoom">Карта ДК</a></button>-->
+    <button class="tablinks" onclick="openCity(event, 'table')">Общая таблица</button> 
+    </div>
+<!-- <button class="accordion">Хикару</button> <div class="panel"> <div class="card"> <a href="card/Hikaru.jpg" class="lightzoom"><img src="sCard/Hikaru.jpg" /></a> </div> </div> --> 
+<!-- Вкладка 1 -->
+<div id="One" class="tabcontent"><h3>1-04 > 1-22 Косплей 1 блок - 1</h3>
+<button class="accordion">1-04 Miku Love - Hu Tao (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/miku.jpg" class="lightzoom"><img src="sCard/miku.jpg" /></a> </div> 
+<button class="accordion">01-01-02 meowxsn02 - Yomozoki Runa (Crazy excitement) г. Челябинск</button> <div class="panel">  <a href="card/meowxsn02.jpg" class="lightzoom"><img src="sCard/meowxsn02.jpg" /></a> </div> 
+<button class="accordion">01-01-03 Kuromi - Gawr Gura (Hololive | Virtual YouTuber) г. Уфа</button> <div class="panel">  <a href="card/kuromi.jpg" class="lightzoom"><img src="sCard/kuromi.jpg" /></a> </div> 
+<button class="accordion">01-01-04 Наваляем Саурону - Фродо и Галадриэль (Властелин колец) г. Екатеринбург</button> <div class="panel">  <a href="card/sauron.jpg" class="lightzoom"><img src="sCard/sauron.jpg" /></a> </div>  
+</div>
+<!-- Вкладка 2 -->
+<div id="Two" class="tabcontent"><h3>1-25 >  1-42 Косплей 1 блок - 2</h3>
+<button class="accordion">01-04-01 Selena - Его Высочество наследный принц Се Лянь (Благословение небожителей) г. Оренбург</button> <div class="panel"> <a href="card/selena.jpg" class="lightzoom"><img src="sCard/selena.jpg" /></a> </div>
+<button class="accordion">01-04-02 Кэси - Una Trish (JoJo's Bizarre Adventure) г. Магнитогорск</button> <div class="panel"> <a href="card/kesi.jpg" class="lightzoom"><img src="sCard/kesi.jpg" /></a> </div>
+<button class="accordion">01-04-03 Valli - Катара (Аватар. Легенда об Аанге) г. Пермь</button> <div class="panel">  <a href="card/valli.jpg" class="lightzoom"><img src="sCard/valli.jpg" /></a> </div> 
+<button class="accordion">01-04-04 Хомяк умер от кринжа - Hatsune Miku(Vocaloid) г. Екатеринбург</button> <div class="panel"> <a href="card/hamster1.jpg" class="lightzoom"><img src="sCard/hamster1.jpg" /></a> </div>
+<button class="accordion">01-04-05 Моя хата с краю - Kamado Tanjiro (Kimetsu No Yaiba) г. Челябинск</button> <div class="panel"> <a href="card/hata.jpg" class="lightzoom"><img src="sCard/hata.jpg" /></a> </div>
+<button class="accordion">01-04-06 Staaaaaaaaaaark - Наруто Узумаки (Наруто: Ураганные хроники) г. Челябинск</button> <div class="panel"> <a href="card/stark.jpg" class="lightzoom"><img src="sCard/stark.jpg" /></a> </div>
+<button class="accordion">01-04-07 Leroy - Senku (Dr.Stone) г. Челябинск</button> <div class="panel">  <a href="card/leroys.jpg" class="lightzoom"><img src="sCard/leroys.jpg" /></a> </div> 
+<button class="accordion">01-04-08 энмочка - Howl (Hauru no ugoku shiro) г. Екатеринбург</button> <div class="panel"> <a href="card/enmochka.jpg" class="lightzoom"><img src="sCard/enmochka.jpg" /></a> </div>
+<button class="accordion">01-04-09 Vegas - Tsukasa (toilet bound hanako kun) г. Челябинск</button> <div class="panel"> <a href="card/vegaso.jpg" class="lightzoom"><img src="sCard/vegaso.jpg" /></a> </div>
+<button class="accordion">01-04-10 Кира Кот - Кейске Баджи (Токийские Мстители) г. Березники</button> <div class="panel"> <a href="card/kirakot.jpg" class="lightzoom"><img src="sCard/kirakot.jpg" /></a> </div>
+<button class="accordion">01-04-11 Hitomi - Rori Mercuri (Врата: там бьются наши воины) г. Екатеринбург</button> <div class="panel">  <a href="card/hitomi.jpg" class="lightzoom"><img src="sCard/hitomi.jpg" /></a> </div> 
+<button class="accordion">01-04-12 Vika Evert - Shizuku Kuroe (My Dress-Up Darling) г. Челябинск</button> <div class="panel"> <a href="card/vika.jpg" class="lightzoom"><img src="sCard/vika.jpg" /></a> </div>
+</div>
+<!-- Вкладка 3 -->
+<div id="Three" class="tabcontent"><h3>2-04 > 2-22 Косплей 2 блок - 1</h3>
+<button class="accordion">01-09-01 Zoza - Леди Локи (комиксы Marvel) г. Пермь</button> <div class="panel">  <a href="card/zoza.jpg" class="lightzoom"><img src="sCard/zoza.jpg" /></a> </div> 
+<button class="accordion">01-09-02 Harley Jee - Wednesday Addams (Wednesday) г. Екатеринбург</button> <div class="panel">  <a href="card/harley.jpg" class="lightzoom"><img src="sCard/harley.jpg" /></a> </div>
+<button class="accordion">01-09-03 _NeZI_ - Gackt (MALICE MIZER) г. Екатеринбург</button> <div class="panel">  <a href="card/nezi.jpg" class="lightzoom"><img src="sCard/nezi.jpg" /></a> </div>
+<button class="accordion">01-09-04 Ryu - Ryonai (Blam Honey) г. Екатеринбург</button> <div class="panel">  <a href="card/ryu.jpg" class="lightzoom"><img src="sCard/ryu.jpg" /></a> </div> 
+<button class="accordion">01-09-05 Ataman - Садко (Фэндом: Сказки старой Руси) г. Уфа</button> <div class="panel">  <a href="card/ataman.jpg" class="lightzoom"><img src="sCard/ataman.jpg" /></a> </div>
+<button class="accordion">01-09-06 D2Lord - Доктор Дум (Фантастическая Четвёрка (Вселенная Марвел)) г. Тюмень</button> <div class="panel">  <a href="card/d2lord.jpg" class="lightzoom"><img src="sCard/d2lord.jpg" /></a> </div>
+<button class="accordion">01-09-07 Лулу - Din Djarin (Mandalorian) г. Челябинск</button> <div class="panel">  <a href="card/lulu.jpg" class="lightzoom"><img src="sCard/lulu.jpg" /></a> </div> 
+<button class="accordion">01-09-08 Irene Andersen - Queen Bee. Miraculous Ladybug г. Екатеринбург</button> <div class="panel">  <a href="card/irene.jpg" class="lightzoom"><img src="sCard/irene.jpg" /></a> </div>
+<button class="accordion">01-09-09 Офхоль - Махидевран (Великолепный век) г. Снежинск</button> <div class="panel">  <a href="card/ofhol.jpg" class="lightzoom"><img src="sCard/ofhol.jpg" /></a> </div>
+<button class="accordion">01-09-10 Winter - Star Butterfly (Звёздная принцесса и силы зла) г. Курган</button> <div class="panel">  <a href="card/winter.jpg" class="lightzoom"><img src="sCard/winter.jpg" /></a> </div> 
+<button class="accordion">01-09-11 Vicky Quinn - Харли Квинн (Хищные птицы: Потрясающая история Харли Квинн) г. Екатеринбург</button> <div class="panel">  <a href="card/vicky.jpg" class="lightzoom"><img src="sCard/vicky.jpg" /></a> </div>
+<button class="accordion">01-09-12 Абра - Сильвия (сериал Локи) г. Екатеринбург</button> <div class="panel">  <a href="card/abra.jpg" class="lightzoom"><img src="sCard/abra.jpg" /></a> </div>
+<button class="accordion">01-09-13 Hicage - Иви (Наследники) г. Екатеринбург</button> <div class="panel">  <a href="card/hicage.jpg" class="lightzoom"><img src="sCard/hicage.jpg" /></a> </div>
+</div>
+<!-- Вкладка 4 -->
+<div id="Four" class="tabcontent"><h3>2-26 > 2-44 Косплей 2 блок - 2</h3>
+<button class="accordion">01-14-01 MeowDzen - Venti (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/meow.jpg" class="lightzoom"><img src="sCard/meow.jpg" /></a> </div> 
+<button class="accordion">01-14-02 ДакимаКума - Unusual Hilichurl (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/dakima.jpg" class="lightzoom"><img src="sCard/dakima.jpg" /></a> </div> 
+<button class="accordion">01-14-03 Ричи Дрейтон - Beheaded (Dead Cells) г. Екатеринбург</button> <div class="panel">  <a href="card/richi.jpg" class="lightzoom"><img src="sCard/richi.jpg" /></a> </div>
+<button class="accordion">01-14-04 Саурон - Элой Horizon Zero Dawn г. Екатеринбург</button> <div class="panel">  <a href="card/sayron.jpg" class="lightzoom"><img src="sCard/sayron.jpg" /></a> </div> 
+<button class="accordion">01-14-05 Ukyu - Diluc (Genshin Impact) г. Златоуст</button> <div class="panel">  <a href="card/ukyud.jpg" class="lightzoom"><img src="sCard/ukyud.jpg" /></a> </div> 
+<button class="accordion">01-14-06 street_seamstress - Qiyana (League of legends) г. Екатеринбург</button> <div class="panel">  <a href="card/street.jpg" class="lightzoom"><img src="sCard/street.jpg" /></a> </div>
+<button class="accordion">01-14-07 Deychan - Ahri K/DA Pop Stars Prestige (League og legends) г. Екатеринбург</button> <div class="panel">  <a href="card/deychan.jpg" class="lightzoom"><img src="sCard/deychan.jpg" /></a> </div> 
+<button class="accordion">01-14-08 Killuamur - Renata Glasc (League of Legends) г. Магнитогорск</button> <div class="panel">  <a href="card/killuamur.jpg" class="lightzoom"><img src="sCard/killuamur.jpg" /></a> </div> 
+<button class="accordion">01-14-09 Laito - Ciri (The Witcher 3: Wild Hunt) г. Уфа</button> <div class="panel">  <a href="card/laito.jpg" class="lightzoom"><img src="sCard/laito.jpg" /></a> </div>
+<button class="accordion">01-14-10 Пацанесса с райончика - V (Cyberpunk 2077) г. Екатеринбург</button> <div class="panel">  <a href="card/pacan.jpg" class="lightzoom"><img src="sCard/pacan.jpg" /></a> </div> 
+<button class="accordion">01-14-11 Morfeya - Lady Alcina Dimitrescu (Resident Evil Village) г. Омск</button> <div class="panel">  <a href="card/morfeya.jpg" class="lightzoom"><img src="sCard/morfeya.jpg" /></a> </div> 
+<button class="accordion">01-14-12 Miyurin - Nilou (Genshin Impact) г. Казань</button> <div class="panel">  <a href="card/miyurin.jpg" class="lightzoom"><img src="sCard/miyurin.jpg" /></a> </div>
+<button class="accordion">01-14-13 Setzer - Scathach-Skadi (Fate/Grand Order) г. Тюмень</button> <div class="panel">  <a href="card/setzer.jpg" class="lightzoom"><img src="sCard/setzer.jpg" /></a> </div> 
+<button class="accordion">01-14-14 TsubakiFudzioka - Pyro Abyss Mage (Genshin Impact) г. Екатеринбург</button> <div class="panel">  <a href="card/tsubaki.jpg" class="lightzoom"><img src="sCard/tsubaki.jpg" /></a> </div> 
+<button class="accordion">01-14-15 Afrai - Ягненок - Культ Ягненка (Cult of the Lamb) г. Уфа</button> <div class="panel">  <a href="card/afrai.jpg" class="lightzoom"><img src="sCard/afrai.jpg" /></a> </div>
+</div>
+<!-- Вкладка 5 -->
+<div id="Five" class="tabcontent"><h3>3-04 > 3-19 Косплей 3 блок - 1</h3>
+<button class="accordion">01-19-01 Koritsa, Amaji - Лиза, Розария (Genshin Impact) г. Уфа</button> <div class="panel">  <a href="card/koritsa.jpg" class="lightzoom"><img src="sCard/koritsa.jpg" /></a> </div> 
+<button class="accordion">01-19-02 The Rat Crew - Такемичи, Баджи и Чифую (Tokyo revengers) г. Екатеринбург</button> <div class="panel">  <a href="card/rat.jpg" class="lightzoom"><img src="sCard/rat.jpg" /></a> </div> 
+<button class="accordion">01-19-03 Двойной Чёрный - Чуя Накахара, Осаму Дазай (Бродячие Псы: Литературные гении) г. Пермь</button> <div class="panel">  <a href="card/double.jpg" class="lightzoom"><img src="sCard/double.jpg" /></a> </div> 
+<button class="accordion">01-19-04 System error - Mobei Jun, Shang Qinghua (Scum Villain's Self-Saving System) г. Челябинск</button> <div class="panel">  <a href="card/system.jpg" class="lightzoom"><img src="sCard/system.jpg" /></a> </div> 
+<button class="accordion">01-19-05 Vegas и Pete - Tomoe Mizuki (kamisama hajimemashita) г. Челябинск</button> <div class="panel">  <a href="card/vegas.jpg" class="lightzoom"><img src="sCard/vegas.jpg" /></a> </div>
+<button class="accordion">01-19-06 Star Watter, Star Batter - Venti, primogem (Genshin impact) г. Челябинск</button> <div class="panel">  <a href="card/star.jpg" class="lightzoom"><img src="sCard/star.jpg" /></a> </div>
+<button class="accordion">01-19-07 Профсоюз Илин - Вэй Усянь и мёртвые леди (Mo Dao Zu Shi) г. Пермь</button> <div class="panel">  <a href="card/ilin.jpg" class="lightzoom"><img src="sCard/ilin.jpg" /></a> </div> 
+<button class="accordion">01-19-08 Sawaka & Archangel - Raiden Shogun, Raiden Shogun boss (Genshin Impact) г. Челябинск, Екатеринбург</button> <div class="panel">  <a href="card/sawaka.jpg" class="lightzoom"><img src="sCard/sawaka.jpg" /></a> </div> 
+<button class="accordion">01-19-09 SasaraZABIV228 и несоня - dark!Lumine, Albedo (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/sasara.jpg" class="lightzoom"><img src="sCard/sasara.jpg" /></a> </div> 
+<button class="accordion">01-19-10 SaNoeL и Nebulochka - Линк и Зельда (Легенда о Зельде: Дыхание Просторов) г. Екатеринбург</button> <div class="panel">  <a href="card/sanoel.jpg" class="lightzoom"><img src="sCard/sanoel.jpg" /></a> </div> 
+<button class="accordion">01-19-11 Последний День - Ориджинал Демон Лиса г. Екатеринбург</button> <div class="panel">  <a href="card/lastday.jpg" class="lightzoom"><img src="sCard/lastday.jpg" /></a> </div>
+</div>
+<!-- Вкладка 6 -->
+<div id="Six" class="tabcontent"><h3>3-23 > 3-37 Косплей 3 блок - 2</h3>
+<button class="accordion">02-02-01 M.I.R - Kanroji Mitsuri, Iguro Obanai, Tomioka Giyu (Kimetsu no Yaiba) г. Челябинск</button> <div class="panel">  <a href="card/mir.jpg" class="lightzoom"><img src="sCard/mir.jpg" /></a> </div> 
+<button class="accordion">02-02-02 Leroy & Meow.Dzen - Фишай, Сейлор Железная Мышь(Сейлор Мун) г. Челябинск</button> <div class="panel">  <a href="card/leroy.jpg" class="lightzoom"><img src="sCard/leroy.jpg" /></a> </div> 
+<button class="accordion">02-02-03 Selena, Шиндзюка - Вэнь Кесин (Далекие странники), Вей Усянь (Неукротимый повелитель Чэньцин) г. Оренбург</button> <div class="panel"> <a href="card/selen.jpg" class="lightzoom"><img src="sCard/selen.jpg" /></a> </div>
+<button class="accordion">02-02-04 Ревуны - Серсея Ланнистер, Джоффри Баратеон (Игра престолов) г. Екатеринбург</button> <div class="panel">  <a href="card/rev.jpg" class="lightzoom"><img src="sCard/rev.jpg" /></a> </div>
+<button class="accordion">02-02-05 Makaseraph&Kanda - Willow Park, Hunter (The Owl House) г. Екатеринбург</button> <div class="panel">  <a href="card/make.jpg" class="lightzoom"><img src="sCard/make.jpg" /></a> </div> 
+<button class="accordion">02-02-06 Cotton Candy - Vi, Caitlyn (Arcane) г. Тюмень</button> <div class="panel">  <a href="card/cotton.jpg" class="lightzoom"><img src="sCard/cotton.jpg" /></a> </div> 
+<button class="accordion">02-02-07 Agito N & Ledel - Arkham Knight & Raven (DC Comics) г. Екатеринбург</button> <div class="panel">  <a href="card/agito.jpg" class="lightzoom"><img src="sCard/agito.jpg" /></a> </div> 
+<button class="accordion">02-02-08 Сахарный дуэт - Kaeya Alberich, Diluc Ragnvindr (Genshin impact) г. Тюмень</button> <div class="panel"> <a href="card/sugar.jpg" class="lightzoom"><img src="sCard/sugar.jpg" /></a> </div>
+<button class="accordion">02-02-09 Mad_Akuma и Oxxy - Анжелика Бушар, Барнабас Коллинз (Мрачные тени) г. Челябинск</button> <div class="panel">  <a href="card/madakuma.jpg" class="lightzoom"><img src="sCard/madakuma.jpg" /></a> </div>
+<button class="accordion">02-02-10 Sad Dreamer, Koritsa - Gorou, Yae Miko (Genshin Impact) г. Уфа</button> <div class="panel">  <a href="card/sad.jpg" class="lightzoom"><img src="sCard/sad.jpg" /></a> </div> 
+</div>
+<!-- Вкладка 7 
+<div id="Seven" class="tabcontent"><h3>Второй блок. Тематическое</h3>
+<button class="accordion">02-06-01 Дабуди дабудай - Дух, Охотница, Легион, Чума, Медсестра, Онрё, Фенг Мин (Dead by Daylight) г. Соликамск</button> <div class="panel">  <a href="card/dabudi.jpg" class="lightzoom"><img src="sCard/dabudi.jpg" /></a> </div> 
+<button class="accordion">02-06-02 Злой_лапшичный Маг - Beetlejuice(Beetlejuice 1998) г. Курган</button> <div class="panel">  <a href="card/mage.jpg" class="lightzoom"><img src="sCard/mage.jpg" /></a> </div>
+<button class="accordion">02-06-03 Северная рыба - Angel Dust, Alastor (Hazbin Hotel) г. Екатеринбург</button> <div class="panel">  <a href="card/fish.jpg" class="lightzoom"><img src="sCard/fish.jpg" /></a> </div> 
+<button class="accordion">02-06-04 Конспираси - Alice (Alice: Madness Returns) г. Челябинск</button> <div class="panel">  <a href="card/kons.jpg" class="lightzoom"><img src="sCard/kons.jpg" /></a> </div> 
+<button class="accordion">02-06-05 Адские Ручки - Битлджус, Лидия Дитц (Beetlejuice) г. Челябинск</button> <div class="panel">  <a href="card/hands.jpg" class="lightzoom"><img src="sCard/hands.jpg" /></a> </div> 
+<button class="accordion">02-06-06 KAILAT - Leon Kennedy (Resident Evil 2 Remake) г. Екатеринбург</button> <div class="panel">  <a href="card/kailat.jpg" class="lightzoom"><img src="sCard/kailat.jpg" /></a> </div>
+<button class="accordion">02-06-07 Буква Ю - Микаэлла,Кошмар,Медсестра,Охотница,Чума,Онрё,Трюкач (Dead by Daylight) г. Екатеринбург</button> <div class="panel">  <a href="card/u.jpg" class="lightzoom"><img src="sCard/u.jpg" /></a> </div> 
+</div>
+Вкладка 8
+<div id="Eight" class="tabcontent"><h3>Второй блок. одиночное. Аниме</h3>
+<button class="accordion">02-11-01 Sa.m.u.rai_666 - Jabami Yumeko (Kakegurui) г. Екатеринбург</button> <div class="panel">  <a href="card/samurai.jpg" class="lightzoom"><img src="sCard/samurai.jpg" /></a> </div> 
+<button class="accordion">02-11-02 Mickeyjedi - Midoriya Izuku (My Hero Academia) г. Уфа</button> <div class="panel">  <a href="card/mickeyjedi.jpg" class="lightzoom"><img src="sCard/mickeyjedi.jpg" /></a> </div>
+<button class="accordion">02-11-03 Лисий хвост - Воспоминание о ведьме (Оригинальные арты Сакизо) г. Курган</button> <div class="panel">  <a href="card/lisiy.jpg" class="lightzoom"><img src="sCard/lisiy.jpg" /></a> </div>
+<button class="accordion">02-11-04 Хомяк умер от кринжа - Koichi Hirose( jojo bizarre adventure) г. Екатеринбург</button> <div class="panel">  <a href="card/hamster.jpg" class="lightzoom"><img src="sCard/hamster.jpg" /></a> </div> 
+<button class="accordion">02-11-05 Andy Harpy - Chrollo Lucilfer (Hunter x Hunter) г. Москва</button> <div class="panel">  <a href="card/andy.jpg" class="lightzoom"><img src="sCard/andy.jpg" /></a> </div>
+<button class="accordion">02-11-06 Morfeya - Julietta Necromancer (Sakizo) г. Омск</button> <div class="panel">  <a href="card/morfey.jpg" class="lightzoom"><img src="sCard/morfey.jpg" /></a> </div>
+<button class="accordion">02-11-07 Канифоль - Люсина Кусинада (Кибепанк, бегущие по краю) г. Уфа</button> <div class="panel">  <a href="card/kanifol.jpg" class="lightzoom"><img src="sCard/kanifol.jpg" /></a> </div> 
+<button class="accordion">02-11-08 Volts - Chouji Akimichi (Naruto: Shippûden) г. Серов</button> <div class="panel">  <a href="card/volts.jpg" class="lightzoom"><img src="sCard/volts.jpg" /></a> </div>
+<button class="accordion">02-11-09 Rifokkusuu - Shinobu Kochō (Demon Slayer: Kimetsu no Yaiba) г. Екатеринбург</button> <div class="panel">  <a href="card/rifokkusuu.jpg" class="lightzoom"><img src="sCard/rifokkusuu.jpg" /></a> </div>
+<button class="accordion">02-11-10 akiyamawa - Нина (Artiswitch) г. Соликамск</button> <div class="panel">  <a href="card/akiyamawa.jpg" class="lightzoom"><img src="sCard/akiyamawa.jpg" /></a> </div> 
+<button class="accordion">02-11-11 Luna Noash - Soul Separator (Sakizo) г. Магнитогорск</button> <div class="panel">  <a href="card/luna.jpg" class="lightzoom"><img src="sCard/luna.jpg" /></a> </div>
+</div>
+Вкладка 9
+<div id="Nine" class="tabcontent"><h3>Второй блок. Одиночное. Original</h3>
+<button class="accordion">02-16-01 Sishka14 - Рыцарь смерти концепт арт Зака Фишера г. Тюмень</button> <div class="panel">  <a href="card/sishka14.jpg" class="lightzoom"><img src="sCard/sishka14.jpg" /></a> </div> 
+<button class="accordion">02-16-02 Кроули - Стервятник (Дом, в котором...) г. Челябинск</button> <div class="panel">  <a href="card/krouli.jpg" class="lightzoom"><img src="sCard/krouli.jpg" /></a> </div> 
+<button class="accordion">02-16-03 Nancy_Fancy - Fem!Xiao (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/nancy.jpg" class="lightzoom"><img src="sCard/nancy.jpg" /></a> </div> 
+<button class="accordion">02-16-04 Владимир Магнус - Рыцарь света (Ориджинал) г. Челябинск</button> <div class="panel">  <a href="card/magnus.jpg" class="lightzoom"><img src="sCard/magnus.jpg" /></a> </div>
+<button class="accordion">02-16-05 Lally - Maid Raiden Ei (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/lally.jpg" class="lightzoom"><img src="sCard/lally.jpg" /></a> </div> 
+<button class="accordion">02-16-06 Извинись. - GUMI (Vocaloid(Echo)) г. Пермь</button> <div class="panel">  <a href="card/izvini.jpg" class="lightzoom"><img src="sCard/izvini.jpg" /></a> </div> 
+<button class="accordion">02-16-07 Эйдолон - Бравая и краснознамённая Луцентис, Гроза Приключенцев (Ориджинал) г. Челябинск</button> <div class="panel">  <a href="card/eidolon.jpg" class="lightzoom"><img src="sCard/eidolon.jpg" /></a> </div> 
+<button class="accordion">02-16-08 Shinigamka - Аллерия Ветрокрылая (Варкрафт, арт Зака Фишера) г. Соликамск</button> <div class="panel">  <a href="card/shinigamka.jpg" class="lightzoom"><img src="sCard/shinigamka.jpg" /></a> </div>
+</div>
+Вкладка 10
+<div id="Ten" class="tabcontent"><h3>Второй блок. Групповое </h3>
+<button class="accordion">02-17-01 Крабовый саботаж - Чтец бездны, Маги бездны и Бай Вэнь (Genshin Impact) г. Пермь</button> <div class="panel">  <a href="card/krab.jpg" class="lightzoom"><img src="sCard/krab.jpg" /></a> </div> 
+<button class="accordion">02-17-02 Китайская Суета - Hua Cheng, He Xuan, Qi Rong, Bai Wuxiang (Heaven Officials' Blessing) г. Екатеринбург</button> <div class="panel">  <a href="card/novak.jpg" class="lightzoom"><img src="sCard/novak.jpg" /></a> </div> 
+<button class="accordion">02-17-03 Stars of the Night - League of Legends K/DA- Akali, Ahri, Evelynn, Kai’sa, Seraphine г. Екатеринбург, Челябинск, Березники</button> <div class="panel">  <a href="card/stars.jpg" class="lightzoom"><img src="sCard/stars.jpg" /></a> </div>
+<button class="accordion">02-17-04 МДОУ "МАЯЧОК" - Ruvik, Julie Kidman, Joseph Oda, Sebastian Castellanos (The Evil Within) г. Екатеринбург</button> <div class="panel">  <a href="card/mayak.jpg" class="lightzoom"><img src="sCard/mayak.jpg" /></a> </div> 
+<button class="accordion">02-17-05 Аррр, спецагенты - Valorant - Jett, Neon, Yoru, Killjoy, Chamber, Reyna, Viper г. Оренбург, Уфа, Санкт-Петербург</button> <div class="panel">  <a href="card/spec.jpg" class="lightzoom"><img src="sCard/spec.jpg" /></a> </div> 
+<button class="accordion">02-17-06 Пилорама - Человек-Бензопила: Дэнджи, Аки, Химено, Макима, Кобени, Пауер, Резе, Ангел г. Челябинск, Златоуст</button> <div class="panel">  <a href="card/pilorama.jpg" class="lightzoom"><img src="sCard/pilorama.jpg" /></a> </div> 
+</div>
+Вкладка 11
+<div id="Eleven" class="tabcontent"><h3>Третий блок. Экшн-дефиле</h3>
+<button class="accordion">03-01-01 Тёмное братство - Астрид, Бабетта и её паук, Визара , Габриелла, Довакин, Люсьен Лошанс и Цицерон - Скайрим Тёмное братство г. Тюмень, Екатеринбург, Челябинск, Курган</button> <div class="panel">  <a href="card/skyrim.jpg" class="lightzoom"><img src="sCard/skyrim.jpg" /></a> </div>
+<button class="accordion">03-01-02 Рожденные хаосом - Основатель тёмного пути г. Екатеринбург</button> <div class="panel">  <a href="card/chaos.jpg" class="lightzoom"><img src="sCard/chaos.jpg" /></a> </div>
+<button class="accordion">03-01-03 Театр Теней - Книга/мюзикл «Последнее испытание» г. Екатеринбург</button> <div class="panel">  <a href="card/shadows.jpg" class="lightzoom"><img src="sCard/shadows.jpg" /></a> </div>
+<button class="accordion">03-01-04 PreGryze - Xiang Ling (Genshin impact) г. Челябинск</button> <div class="panel">  <a href="card/preg.jpg" class="lightzoom"><img src="sCard/preg.jpg" /></a> </div>
+<button class="accordion">03-01-05 Черти за 180 - Nishinoya Yu,Tanaka Ryūnosuke,Tsukishima Kei,Yamaguchi Tadashi (Haikyuu!!) г. Челябинск</button> <div class="panel">  <a href="card/chert.jpg" class="lightzoom"><img src="sCard/chert.jpg" /></a> </div>
+<button class="accordion">03-01-06 Уральская Инквизиция - Король Чародей, Эовин (Властелин Колец, арты художницы liridi) г. Екатеринбург</button> <div class="panel">  <a href="card/ural.jpg" class="lightzoom"><img src="sCard/ural.jpg" /></a> </div>
+<button class="accordion">03-01-07 NineX - Вей У Сянь, Цзян Яньли, Заклинатели, мертвецы г. Курган, Челябинск, Екатеринбург, Пермь</button> <div class="panel">  <a href="card/nine.jpg" class="lightzoom"><img src="sCard/nine.jpg" /></a> </div>
+<button class="accordion">03-01-08 ТАС "Хилт": Хранительница, Silverfox, Русский джедай - Оби-Ван Кеноби, Асока Тано, Баррисс Оффи (Звёздные войны) г. Тюмень</button> <div class="panel">  <a href="card/hilt.jpg" class="lightzoom"><img src="sCard/hilt.jpg" /></a> </div>
+<button class="accordion">03-01-09 DarkAurum - Аанг, Катара, Сокка, Тоф Бейфонг, Суюки, Зуко, Азула, Мэй, Тай Ли, Удивительно осведомленый Продавец капусты (Аватар: Легенда об Аанге) г. Екатеринбург, Первоуральск</button> <div class="panel">  <a href="card/dark.jpg" class="lightzoom"><img src="sCard/dark.jpg" /></a> </div>
+</div>
+Вкладка 12
+<div id="Tvelve" class="tabcontent"><h3>Третий блок. Одиночное. Game</h3>
+<button class="accordion">03-06-01 Archangel - Brother Nier (Nier:Replicant) г. Екатеринбург</button> <div class="panel">  <a href="card/archangel.jpg" class="lightzoom"><img src="sCard/archangel.jpg" /></a> </div> 
+<button class="accordion">03-06-02 Ukyu - Senhime (Onmyoji) г. Златоуст</button> <div class="panel">  <a href="card/ukyu.jpg" class="lightzoom"><img src="sCard/ukyu.jpg" /></a> </div> 
+<button class="accordion">03-06-03 Sofic - Куки Синобу (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/sofic.jpg" class="lightzoom"><img src="sCard/sofic.jpg" /></a> </div>
+<button class="accordion">03-06-04 Deychan - Artoria Pendragon Alter (Fate/Grand Order) г. Екатеринбург</button> <div class="panel">  <a href="card/deychan.jpg" class="lightzoom"><img src="sCard/deychan.jpg" /></a> </div> 
+<button class="accordion">03-06-05 Baldur - Zhongli (Genshin impact) г. Тюмень</button> <div class="panel">  <a href="card/baldur.jpg" class="lightzoom"><img src="sCard/baldur.jpg" /></a> </div> 
+<button class="accordion">03-06-06 Staaaaaaaaaaark - Yae Miko (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/starkg.jpg" class="lightzoom"><img src="sCard/starkg.jpg" /></a> </div>
+<button class="accordion">03-06-07 SasaraZABIV228 - Morax (Genshin Impact) г. Челябинск</button> <div class="panel">  <a href="card/sasaraz.jpg" class="lightzoom"><img src="sCard/sasaraz.jpg" /></a> </div> 
+<button class="accordion">03-06-08 Slowkiry aka Царь Котий IV - Довакин (The Elder Scrolls) г. Тюмень</button> <div class="panel">  <a href="card/dovakin.jpg" class="lightzoom"><img src="sCard/dovakin.jpg" /></a> </div> 
+<button class="accordion">03-06-09 Юи Накамура - Beidou Genshin Impact г. Челябинск</button> <div class="panel">  <a href="card/ui.jpg" class="lightzoom"><img src="sCard/ui.jpg" /></a> </div>
+<button class="accordion">03-06-10 Narienlie - Riddle Rosehearts (Twisted Wonderland) г. Челябинск</button> <div class="panel">  <a href="card/narienlie.jpg" class="lightzoom"><img src="sCard/narienlie.jpg" /></a> </div> 
+<button class="accordion">03-06-11 Senpai - Master Chief (Halo) г. Челябинск</button> <div class="panel">  <a href="card/senpai.jpg" class="lightzoom"><img src="sCard/senpai.jpg" /></a> </div> 
+<button class="accordion">03-06-12 Mono Abel - Ashe (Overwatch) г. Уфа</button> <div class="panel">  <a href="card/monoabel.jpg" class="lightzoom"><img src="sCard/monoabel.jpg" /></a> </div>
+<button class="accordion">03-06-13 Yuna Yukari - KeQing (Genshin Impact) г. Екатеринбург</button> <div class="panel">  <a href="card/yuna.jpg" class="lightzoom"><img src="sCard/yuna.jpg" /></a> </div> 
+<button class="accordion">03-06-14 Конспираси - V (Cyberpunk 2077) г.Челябинск</button> <div class="panel">  <a href="card/konspir.jpg" class="lightzoom"><img src="sCard/konspir.jpg" /></a> </div> 
+<button class="accordion">03-06-15 littlby - Blood Moon Akali (League of Legends) г. Екатеринбург</button> <div class="panel">  <a href="card/littlby.jpg" class="lightzoom"><img src="sCard/littlby.jpg" /></a> </div> 
+</div>
+Таблица -->
+<div id="table" class="tabcontent">
+<table class="table_blur">
+<tr>
+<th colspan="2">1-ый блок</th></tr>
+    <tr class="B"><td>11:55</td><td>Открытие</td></tr>
+    <tr class="B"><td>12:10</td><td>Вокал и cover dance</td></tr>
+  <tr><td>1-01</td><td>CD: Gotta move - LE SSERAFIM - ANTIFRAGILE (Уфа)</td></tr>
+  <tr><td>1-02</td><td>CD: Be Moon - Enhypen - 'Future Perfect (Pass the MIC) (Набережные Челны)</td></tr>
+  <tr><td>1-03</td><td>V: Екатерина Касьянова - Lee Seung Chul - Western Sky (Уфа)</td></tr>
+    <tr class="B"><td>12:20</td><td>Косплей-дефиле 1й блок - 1</td></tr>
+  <tr><td>1-04</td><td>OD: Huskell - Genshin Impact - Сайно (Пермь)</td></tr>
+  <tr><td>1-05</td><td>OD: Rista Eria - Houseki no kuni - Жёлтый Алмаз (Пермь)</td></tr>
+  <tr><td>1-06</td><td>OD: Rinoko - Wednesday - Wednesday Addams (Уфа)</td></tr>
+  <tr><td>1-07</td><td>OD: Afrai - Cult of the Lamb - Ягненок (Уфа)</td></tr>
+  <tr><td>1-08</td><td>OD: Laito - Witcher 3 (Wild Hunt) - Ciri (Уфа)</td></tr>
+  <tr><td>1-09</td><td>OD: Кефя - Зайчик - Алиса (Пермь)</td></tr>
+  <tr><td>1-10</td><td>MGD: тройник за 200 - Project SEKAI: Colorful Stage! - Азусава Кохане, Шираиши Ан, Мику Хацунэ (Пермь)</td></tr>
+  <tr><td>1-11</td><td>MGD: Культ поклонения лапше - Tokyo Revengers - Кейске Баджи, Мацуно Чифую (Уфа)</td></tr>
+  <tr><td>1-12</td><td>MGD: Персиковый чай - Monster High - Дракулаура, Фрэнки Штейн (Ижевск)</td></tr>
+  <tr><td>1-13</td><td>MGD: некосбенд: юнит А - Genshin Impact - Люмин, Розария (Челябинск)</td></tr>
+  <tr><td>1-14</td><td>MGD: Amaji, Vira_vi - Genshin Impact - Shenhe, Yelan (Уфа)</td></tr>
+  <tr><td>1-15</td><td>OD: Hicage - Genshin impact - Ningguang (Екатеринбург)</td></tr>
+  <tr><td>1-16</td><td>OD: Луна - Genshin Impact - Ganyu (Ижевск)</td></tr>
+  <tr><td>1-17</td><td>OD: квася мяу - BUBBLE - Алтан Дагбаев (Пермь)</td></tr>
+  <tr><td>1-18</td><td>OD: velianoo - arcane - jinx (Уфа)</td></tr>
+  <tr><td>1-19</td><td>OD: Kuro-sama - Невеста Чакки - Тиффани (Екатеринбург)</td></tr>
+  <tr><td>1-20</td><td>OD: Yoru - #NND Compass - Kutsunegasaki Amairo (Пермь)</td></tr>
+  <tr><td>1-21</td><td>GD: Аморальная поддержка - Великий из бродячих псов - Осаму Дазай, Накахара Чуя, Фёдор Достоевский, Николай Гоголь, Накаджима Ацуши, Рюноскэ Акутагава, Мори Огай, Акико Йосано, Кёка Изуми, Кенджи Миядзава, Акутагава Гин, Ичиё Хигучи, Люси Монтгомери (Уфа)</td></tr>
+  <tr><td>1-22</td><td>GD: Starfans Tatarstan - Star Wars - Дарт Вейдер, Люк Скайуокер, Лея Органа, имперский офицер (Казань, Уфа, Набережные Челны)</td></tr>
+	<tr class="B"><td>12:50</td><td>Cover dance</td></tr>
+  <tr><td></td>1-23<td>CD: Red Jokers - Weki Meki - COOL (Казань)</td></tr>
+  <tr><td></td>1-24<td>CD: Gotta move - TXT - Sugar Rush Ride (Уфа)</td></tr>
+    <tr class="B"><td>12:55</td><td>Косплей-дефиле 1й блок - 2</td></tr>
+  <tr><td>1-25</td><td>OD: Sunden Mate - Lycoris Recoil - Chisato Nishikigi (Екатеринбург)ь</td></tr>
+  <tr><td>1-26</td><td>OD: Renton_Torston - Trigun: Stampede - Vash the Stampede (Пермь)</td></tr>
+  <tr><td>1-27</td><td>OD: Staaaaaaaaaaark - Наруто: Ураганные хроники - Наруто Узумаки (Челябинск)</td></tr>
+  <tr><td>1-28</td><td>OD: Канифоль - Arknights - Skadi [Corrupted Heart] (Уфа)</td></tr>
+  <tr><td>1-29</td><td>OD: catalepticmouse - League of Legends - Star Guardian Kai`Sa (Оренбург)</td></tr>
+  <tr><td>1-30</td><td>MGD: Сегодня без карлика - Oshi no Ko - Hoshino Ai, Hoshino Aquamarine (Майями, Пермь)</td></tr>
+  <tr><td>1-31</td><td>MGD: Ataman, Koritsa - Шаман Кинг - Джун Тао, Ли Пайлон (Уфа)</td></tr>
+  <tr><td>1-32</td><td>MGD: MIKKEL, Sad Dreamer - Howl's Moving Castle - Howl, Sophie (Уфа)</td></tr>
+  <tr><td>1-33</td><td>MGD: Нефть и мед - Chainsaw Man - Katana Man, Akane Sawatari (Уфа)</td></tr>
+  <tr><td>1-34</td><td>MGD: Пошло-Поехало - Genshin Impact - Kaedehara Kazuha, Beidou (Набережные Челны)</td></tr>
+  <tr><td>1-35</td><td>OD: Wazdaka - Dark souls - Рыцарь Фараама (Пермь)</td></tr>
+  <tr><td>1-36</td><td>OD: Ричи Дрейтон - Pyre - Jodariel (Екатеринбург)</td></tr>
+  <tr><td>1-37</td><td>OD: Selena - Благословение небожителей - Ши Цинсюань (Оренбург)</td></tr>
+  <tr><td>1-38</td><td>OD: Хоррор на Юнити - Genshin Impact - Нахида (Уфа)</td></tr>
+  <tr><td>1-39</td><td>OD: Reiz - Genshin impact - Тигнари (Уфа)</td></tr>
+  <tr><td>1-40</td><td>OD: Сержант Ботар-Оль - Метал-опера «Сокровище Энии» - Ботар-эль (Самара)</td></tr>
+  <tr><td>1-41</td><td>OD: Морп - Malice Mizer - Közi (Уфа)</td></tr>
+  <tr><td>1-42</td><td>AD: SNR и Дракошка - Звёздные войны: Войны клонов - Дарт Мол, Асока Тано (Набережные Челны, Казань)</td></tr>
+    <tr class="B"><td>13:25</td><td>Вокал и cover dance</td></tr> 
+  <tr><td>1-43</td><td>V: Makitty - Jackie 'O' - Reason living (Уфа)</td></tr>
+  <tr><td>1-44</td><td>CD: Black Moon - ANS - Say My Name (Набережные Челны)</td></tr>
+  <tr><td>1-45</td><td>CD: MICHIN TEAM - Dreamcatcher - Scream (Уфа)</td></tr>
+  <tr><td>1-46</td><td>CD: COFFEE GLASS ft. Ufa cover dance fandom - OMEGA X - WHAT'S GOIN' ON (Уфа)</td></tr>
+    <tr class="B"><td>13:40</td><td>Перерыв 45 минут</td></tr>
+	<tr><th colspan="2">2-ой блок</th></tr>
+    <tr class="B"><td>14:25</td><td>Вокал и cover dance</td></tr>
+  <tr><td>2-01</td><td>CD: O.M.G - INFINITE - Bad (Уфа)</td></tr>
+  <tr><td>2-02</td><td>V: Saya - Ado - Readymade (Уфа)</td></tr>
+  <tr><td>2-03</td><td>CD: ZipZip - NCT 127-2 Baddies (Уфа)</td></tr>
+    <tr class="B"><td>14:40</td><td>Косплей-дефиле 2й блок - 1</td></tr>
+  <tr><td>2-04</td><td>OD: Udria - JoJo's Bizarre Adventure - Giorno Giovanna (Пермь)</td></tr>
+  <tr><td>2-05</td><td>OD: Yap Yo - One Punch-Man - Стальная Бита | Бэд (Уфа)</td></tr>
+  <tr><td>2-06</td><td>OD: Rikka - Благословение Небожителей - Ши Цинсюань (Уфа)</td></tr>
+  <tr><td>2-07</td><td>OD: Марина Хижняк - Code geass - СС (Екатеринбург)</td></tr>
+  <tr><td>2-08</td><td>OD: mariamiaou - Cult of the Lamb - Ягненок (human ver.) (Пермь)</td></tr>
+  <tr><td>2-09</td><td>OD: Yume - BanG Dream! Girls Band Party! - Футаба Цукуши (Екатеринбург)</td></tr>
+  <tr><td>2-10</td><td>MGD: Lumen, Piffle - League of legends - Coven Evelynn, Crime City Nightmare Akali (Оренбург)</td></tr>
+  <tr><td>2-11</td><td>MGD: АйдолХелл - Love Live! School Idol Project - Эли Аясе, Нозоми Тоджо, Нико Ядзава (Пермь)</td></tr>
+  <tr><td>2-12</td><td>MGD: Kita&Rey_cos - Игра престолов - Санса Старк, Арья Старк (Челябинск, Уфа)</td></tr>
+  <tr><td>2-13</td><td>MGD: Ameli, Kvoni Min - Японская, китайская мифологии - Девятихвостая лисица, Красный дракон (Уфа)</td></tr>
+  <tr><td>2-14</td><td>MGD: Abel & Genevieve - Мультсериал "ARCANE" - Vi, Caitlyn (Казань)</td></tr>
+  <tr><td>2-15</td><td>OD: amerudess - League of Legends - Akali Star Guardian (Уфа)</td></tr>
+  <tr><td>2-16</td><td>OD: Cherry - Disney: Twisted-Wonderland - Lilia Vanrouge (Москва)</td></tr>
+  <tr><td>2-17</td><td>OD: Mono Abel - Atomic Heart - Баба Зина (Уфа)</td></tr>
+  <tr><td>2-18</td><td>OD: Camilla Sawada - Winx Club - Musa (Уфа)</td></tr>
+  <tr><td>2-19</td><td>OD: Zoza - Сказки старой Руси - Елена Премудрая (Пермь)</td></tr>
+  <tr><td>2-20</td><td>OD: Mako - "The Swan Princess" - Odette (Москва)</td></tr>
+  <tr><td>2-21</td><td>GD: Пыль на кулисе - League of Legends - Kindred, Ahri, Yone. Riven (Оренбург)</td></tr>
+  <tr><td>2-22</td><td>GD: Crazy Bananas - Kakegarui - Jabami Yumeko, Runa Yomozuki, Kirari Yomobami, Itsukii Sumeragi (Уфа)</td></tr>
+    <tr class="B"><td>15:10</td><td>Вокал и cover dance</td></tr>
+  <tr><td>2-23</td><td>CD: High Track - ATEEZ - HALAZIA (Уфа)</td></tr>
+  <tr><td>2-24</td><td>V: Юнусов Альберт - Валерий Золотухин- разговор со счастьем (Уфа)</td></tr>
+  <tr><td>2-25</td><td>CD: TheMUSES ft. White Night - ((G)I-DLE) - 'Nxde' (Уфа)</td></tr>
+    <tr class="B"><td>15:25</td><td>Косплей-дефиле 2й блок - 2:</td></tr>
+  <tr><td>2-26</td><td>OD: Кира Кот - Атака титанов - Саша Блауз (Березники)</td></tr>
+  <tr><td>2-27</td><td>OD: извинись. - Магистр Дьявольского Культа - А-цин (Пермь)</td></tr>
+  <tr><td>2-28</td><td>OD: Nebulochka - Super Smash Bros: Ultimate - принцесса Пич (Екатеринбург)</td></tr>
+  <tr><td>2-29</td><td>OD: Лисий хвост - League of legends - Благая швея Гвен (Курган)</td></tr>
+  <tr><td>2-30</td><td>OD: SaNoeL - The Legend of Zelda: Breath of the Wild - Link (Екатеринбург)</td></tr>
+  <tr><td>2-31</td><td>OD: SHINIGAMka - Dead By Daylight - Дух (Соликамск)</td></tr>
+  <tr><td>2-32</td><td>MGD: Недопонятые ге(ни)и - Последний Серафим - Yuuichirou Hyakuya, Mikaela Hyakuya (Уфа)</td></tr>
+  <tr><td>2-33</td><td>MGD: Inu and Lakko_kot - NieR: Automata - 2B, A2 (Казань, Уфа)</td></tr>
+  <tr><td>2-34</td><td>MGD: Louis Vuitton - Mortal Kombat 11 - Johnny Cage, Liu Kang (Уфа)</td></tr>
+  <tr><td>2-35</td><td>MGD: Рожденные хаосом - Genshin Impact - Capitano, Dottore, Lumine (Екатеринбург)</td></tr>
+  <tr><td>2-36</td><td>MGD: BlakEva,Kenteii - Toy Story 2 - Jessie and Sheriff Woody (Уфа)</td></tr>
+  <tr><td>2-37</td><td>OD: LordFobos - Final Fantasy VI и Dissidia: Final Fantasy - Kefka Palazzo (Челябинск)</td></tr>
+  <tr><td>2-38</td><td>OD: Kyarov - League of legends - Arcana Ahri (Уфа)</td></tr>
+  <tr><td>2-39</td><td>OD: Chidori - Arcane - Vi (Уфа)</td></tr>
+  <tr><td>2-40</td><td>OD: MaryOnPluto - Bee and PuppyCat - Bee (Казань)</td></tr>
+  <tr><td>2-41</td><td>OD: Линарес - Рок-опера "Сокровище Энии", группа "Эпидемия", арт художницы Gesh - Драконица Метель (хуманизация) (Уфа)</td></tr>
+  <tr><td>2-42</td><td>OD: Сырок - Genshin Impact - Коллеи (Collei) (Стерлитамак)</td></tr>
+  <tr><td>2-43</td><td>GD: Анемо бойс бэнд - Genshin Impact - Итер, Венти, Сяо, Хэйдзо, Странник (Уфа, Стерлитамак, Оренбург)</td></tr>
+  <tr><td>2-44</td><td>AD: SaberFightingUfa - Star Wars: High Republic - Imri Cantaros, Stellan Gios (Уфа)</td></tr>
+    <tr class="B"><td>15:45</td><td>Вокал и cover dance</td></tr>
+  <tr><td>2-45</td><td>CD: The T.O.P. Dance School - Kep1er - We Fresh (Уфа)</td></tr>
+  <tr><td>2-46</td><td>V: Adele - so chan whee - tears (Уфа)</td></tr>
+  <tr><td>2-47</td><td>CD: Cloud Nine - DreamNote - GHOST (Уфа)</td></tr>
+    <tr class="B"><td>16:00</td><td>Перерыв 40 минут</td></tr>
+   <tr><th colspan="2">3-ий блок</th></tr>
+    <tr class="B"><td>16:40</td><td>Вокал и cover dance</td></tr>
+  <tr><td>3-01</td><td>CD: X1 - IZ*ONE - Panorama (Уфа)</td></tr>
+  <tr><td>3-02</td><td>CD: O.M.G - CLC - HELICOPTER (Уфа)</td></tr>
+  <tr><td>3-03</td><td>V: Дилюк Рагнвиндр - С.О.С. тоскующего землянина из мюзикла Стармания (Челябинск)</td></tr>
+     <tr class="B"><td>16:55</td><td>Косплей-дефиле 3й блок - 1</td></tr>
+  <tr><td>3-04</td><td>OD: Aisling - Благословение небожителей - Линвэнь (Казань)</td></tr>
+  <tr><td>3-05</td><td>OD: Junka - League of Legends - Серафина (Уфа)</td></tr>
+  <tr><td>3-06</td><td>OD: невдупленыш - Sky: Дети Света - Skykid (Уфа)</td></tr>
+  <tr><td>3-07</td><td>OD: Lessa - NieR:Automata - 2B (Уфа)<td></tr>
+  <tr><td>3-08</td><td>OD: avelik - Genshin Impact - Aether (Итэр) (Уфа/Москва)<td></tr>
+  <tr><td>3-09</td><td>MGD: Starfans Tatarstan - Star Wars. Mandalorian - Мандалорцы (Казань, Ижевск)<td></tr>
+  <tr><td>3-10</td><td>MGD: Лис Укурыш, Radioactive Daddy - The Elder Scrolls V: Skyrim - Довакин, Телдрин Серо (Челябинск)<td></tr>
+  <tr><td>3-11</td><td>MGD: Neko+Chiral & Overwat - Overwatch - D.VA (Hana Song), Cole Cassidy, Elizabeth Caledonia "Calamity" Ashe (Майями, Ижевск, Набережные Челны)<td></tr>
+  <tr><td>3-12</td><td>OD: LK97 - Genshin Impact. - Dainsleif. (Уфа)<td></tr>
+  <tr><td>3-13</td><td>OD: Rista Eria - Sailor Moon - Сейлор Венера (Пермь)<td></tr>
+  <tr><td>3-14</td><td>OD: Shori_tyan - Клинок, рассекающий демонов - Мицури Канроджи (Челябинск)<td></tr>
+  <tr><td>3-15</td><td>OD: Ласка - Devil May Cry 5 - Lady (Уфа)<td></tr>
+  <tr><td>3-16</td><td>OD: Polina Chrome - Hannah Alexander Art (Final Fantasy VII) - Tifa Lockhart (Уфа)<td></tr>
+  <tr><td>3-17</td><td>OD: MeowDzen - Аватар: Легенда об Аанге - Аанг (Челябинск)<td></tr>
+  <tr><td>3-18</td><td>AD: Neko+Chiral - Houseki no Kuni - Ghost, Bort, Cairngorm, Phosphophyllite, Lapis Lazuli (Ижевск, Пермь)<td></tr>
+  <tr><td>3-19</td><td>AD: 42 - Bleach - Зараки Кенпачи, Ячиру Кусаджиши (Уфа)<td></tr>
+	 <tr class="B"><td>17:20</td><td>Вокал и cover dance</td></tr>
+  <tr><td>3-20</td><td>CD: ShiWa - Shinhwa- this love (Уфа)</td></tr>
+  <tr><td>3-21</td><td>V: Tinker Bell - Павел Смеян, Татьяна Воронина - Ветер перемен (Пермь)</td></tr>
+  <tr><td>3-22</td><td>CD: MaD project - TREASURE – BOY (Уфа)</td></tr>
+    <tr class="B"><td>17:35</td><td>Косплей-дефиле 3й блок - 2</td></tr>
+  <tr><td>3-23</td><td>OD: MegaMind - Spy × Family - Loyd Forger (Уфа)</td></tr>
+  <tr><td>3-24</td><td>OD: velianoo - Моя геройская академия - Uravity (Уфа)</td></tr>
+  <tr><td>3-25</td><td>OD: Ykich - Chainsaw Man - Denji (Уфа)</td></tr>
+  <tr><td>3-26</td><td>OD: Dante - Летучий корабль - Царевна Забава (Уфа)</td></tr>
+  <tr><td>3-27</td><td>OD: Jonesy - к/ф "Американский психопат" - Patrick Bateman (Уфа)</td></tr>
+  <tr><td>3-28</td><td>MGD: Koritsa&Amaji - D.Gray-man: Hallow - Канда Юу, Линали Ли (Уфа)</td></tr>
+  <tr><td>3-29</td><td>MGD: Catalepticmouse; Selena - Благословение небожителей - Сань Лан, Наследный принц Се Лянь (Оренбург)</td></tr>
+  <tr><td>3-30</td><td>MGD: Sad Dreamer, Samandra - Cardcaptor Sakura - Sakura Kinomoto, Li Syaoran (Уфа, Екатеринбург)</td></tr>
+  <tr><td>3-31</td><td>OD: TSUNDERE - Genshin Impact - Venti (Уфа)</td></tr>
+  <tr><td>3-32</td><td>OD: Dalisa - Genshin Impact - Люмин (Пермь)</td></tr>
+  <tr><td>3-33</td><td>OD: Akice - Genshin Impact - Нилу (Пермь)</td></tr>
+  <tr><td>3-34</td><td>OD: LyisuaA33 - Fortnite - Sylvie (Октябрьский)</td></tr>
+  <tr><td>3-35</td><td>OD: Kaz Vigilant - Bioshock:Infinite - Букер ДеВитт (Уфа)</td></tr>
+  <tr><td>3-36</td><td>OD: Выбравшая тьму - League of Legends - LeBlanc (Уфа)</td></tr>
+  <tr><td>3-37</td><td>AD: BlackLightning - Ориджинал по вселенной Звездные Воины - Zabrak-Jedi (Уфа)</td></tr>
+    <tr class="B"><td>18:00</td><td>Вокал и cover dance</td></tr>
+  <tr><td>3-38</td><td>V: Доми-Доми - Devastation and Redemption - Yang-Yang (Уфа)</td></tr>
+  <tr><td>3-39</td><td>CD: EYE - BLACKPINK - Shut Down (Уфа)</td></tr>
+  <tr><td>3-40</td><td>CD: WHITE NIGHT ft. ZZ TOWN & SO HAPPY - ATEEZ - Guerrilla (Уфа)</td></tr>
+    <tr class="B"><td>18:15</td><td>ОТКРЫТИЕ LIP SYNC STAR</td></tr>
+  <tr><td>4-01</td><td>LSS: Сырок - Musical Touken Ranbu Tsuwamono Domo ga Yume no Ato - Kono hana no yeni (Челябинск)</td></tr>
+  <tr><td>4-02</td><td>LSS: Время менестрелей - Мультфильм Остров сокровищ - Слепой Пью и Чёрный Пёс - Песня о мальчике Бобби (Уфа)</td></tr>
+  <tr><td>4-03</td><td>LSS: ИнстаКрыстинка - Instasamka - За Деньги Да (Уфа)</td></tr>
+  <tr><td>4-04</td><td>LSS: LimeZ. - Мультсериал Время приключений - Песня Финна про дружбу (Уфа)</td></tr>
+  <tr><td>4-05</td><td>LSS: Время менестрелей - Мультфильм Энканто - Не упоминай Бруно (Уфа, Санкт-Петербург)</td></tr>
+  <tr><td>4-06</td><td>LSS: 3 пельмешка - Самогонщики (1961) (Уфа)</td></tr>
+  <tr><td>4-07</td><td>LSS: Псины не только сутулые - LITTLE BIG - ROCK-PAPER-SCISSORS (Пермь)</td></tr>
+    <tr class="B"><td>18:35</td><td>Внеконкурс</td></tr>
+  <tr><td>5-01</td><td>V: Mau и Макоха - кек вокал</td></tr>
+  <tr><td>5-02</td><td>CD: Lin - Lisa solo stage remix Good thing & Senorita (Уфа)</td></tr>
+  <tr><td>5-03</td><td>V: Афелис - Ahn Ye Eun - Night flower</td></tr>
+  <tr><td>5-04</td><td>CD: Way Dawn - Ive - Eleven (Уфа)</td></tr>
+  <tr><td>5-05</td><td>V: Mau - Hover Bird - Sweet</td></tr>
+  <tr><td>5-06</td><td>CD: Quintessence feat Asura, Ufa cover dance fandom - 'ANTIFRAGILE' (Уфа)</td></tr>
+  <tr><td>5-07</td><td>V: Мария - Skyrim, Dragonborn</td></tr>
+  <tr><td>5-08</td><td>CD: 12 танцующих принцесс - IZ*ONE - Secret Story of the Swan (Уфа)</td></tr>
+     <tr class="B"><th>19:10</th><th>Лотерея</th></tr>
+	 <tr class="B"><th>19:20</th><th>Награждение</th></tr>
+</table>   
+</div>
+    
+    
+    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+<script src="JavaScript.js"></script>
+
+<link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+<script type="text/javascript" src="lightzoom/lightzoom.js"></script>
+<script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});</script>
+</body>
+</html>
