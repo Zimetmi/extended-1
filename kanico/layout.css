@@ -271,7 +271,6 @@ table {
 .tabcontent {
     display: none;
     padding: 8px 14px;
-    border: 1px solid #ccc;
     border-top: none;
 }
 /*Аккордион*/

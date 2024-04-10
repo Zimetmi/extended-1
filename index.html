@@ -1,32 +1,55 @@
 <!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8" />
+<html lang="ru"><head><meta charset="utf-8" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kanico</title>
 	<base href=".">
     <meta name="Keywords" content="">
     <meta name="Description" content="">
+	<link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="kanico/layout.css">
     <link rel="stylesheet" type="text/css" href="kanico/jquery.fancybox.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="kanico/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="kanico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="kanico/favicon-16x16.png">
 	<link rel="manifest" href="kanico/site.webmanifest">
 	<link rel="mask-icon" href="kanico/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<!-- Favicons -->
+	<link type="image/x-icon" rel="shortcut icon" href="./favicon.ico">
+	<link type="image/png" sizes="16x16" rel="icon" href="./favicon-16x16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="./favicon-32x32.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="./favicon-96x96.png">
+	<link type="image/png" sizes="120x120" rel="icon" href="./favicon-120x120.png">
+	<!-- Иконки для Android -->
+	<link type="image/png" sizes="72x72" rel="icon" href="./android-icon-72x72.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="./android-icon-96x96.png">
+	<link type="image/png" sizes="144x144" rel="icon" href="./android-icon-144x144.png">
+	<link type="image/png" sizes="192x192" rel="icon" href="./android-icon-192x192.png">
+	<link type="image/png" sizes="512x512" rel="icon" href="./android-icon-512x512.png">
+	<link rel="manifest" href="./manifest.json">
+	<!-- Иконки для iOS (Apple) -->
+	<link sizes="57x57" rel="apple-touch-icon" href="./apple-touch-icon-57x57.png">
+	<link sizes="60x60" rel="apple-touch-icon" href="./apple-touch-icon-60x60.png">
+	<link sizes="72x72" rel="apple-touch-icon" href="./apple-touch-icon-72x72.png">
+	<link sizes="76x76" rel="apple-touch-icon" href="./apple-touch-icon-76x76.png">
+	<link sizes="114x114" rel="apple-touch-icon" href="./apple-touch-icon-114x114.png">
+	<link sizes="120x120" rel="apple-touch-icon" href="./apple-touch-icon-120x120.png">
+	<link sizes="144x144" rel="apple-touch-icon" href="./apple-touch-icon-144x144.png">
+	<link sizes="152x152" rel="apple-touch-icon" href="./apple-touch-icon-152x152.png">
+	<link sizes="180x180" rel="apple-touch-icon" href="./apple-touch-icon-180x180.png">
 </head>
 <body>
+<header class="header">
+</header>
+	<img class="muzhik" src="muzhik.png" alt="muzhik">
+	<img class="tyan"src="tyan.png" alt="tyan">
 <div class="main">
     <div class="head">
 	<header>
+	<!-- Старая шапка
         <div class="Back" style="height:375px;">
-
-              <div style="height:375px;background:url(kanico/headLogo.jpg) center top no-repeat;"></div></div>
+              <div style="height:375px;background:url(kanico/headLogo.jpg) center top no-repeat;"></div></div>-->
     <!-- Верхняя панель -->
     <div class="tab"> <button class="tablinks" onclick="openCity(event, 'One')">1-04 > 1-22 Косплей 1 блок - 1</button> 
     <button class="tablinks" onclick="openCity(event, 'Two')">1-25 >  1-42 Косплей 1 блок - 2</button>
@@ -41,7 +64,8 @@
     <button class="tablinks" onclick="openCity(event, 'Eleven')">3-01 Экшн</button>
     <button class="tablinks" onclick="openCity(event, 'Tvelve')">3-06 Game</button>
     <button class="tablinks"><a href="map.jpg" class="lightzoom">Карта ДК</a></button>-->
-    <button class="tablinks" onclick="openCity(event, 'table')">Общая таблица</button> 
+    <button class="tablinks" onclick="openCity(event, 'table')">Расписание</button> 
+	<button class="tablinks" onclick="openCity(event, 'red')">HELP</button>
     </div>
 <!-- <button class="accordion">Хикару</button> <div class="panel"> <div class="card"> <a href="card/Hikaru.jpg" class="lightzoom"><img src="sCard/Hikaru.jpg" /></a> </div> </div> --> 
 <!-- Вкладка 1 -->
@@ -272,7 +296,7 @@
   <tr><td>1-18</td><td>OD: velianoo - arcane - jinx (Уфа)</td></tr>
   <tr><td>1-19</td><td>OD: Kuro-sama - Невеста Чакки - Тиффани (Екатеринбург)</td></tr>
   <tr><td>1-20</td><td>OD: Yoru - #NND Compass - Kutsunegasaki Amairo (Пермь)</td></tr>
-  <tr><td>1-21</td><td>GD: Аморальная поддержка - Великий из бродячих псов - Осаму Дазай, Накахара Чуя, Фёдор Достоевский, Николай Гоголь, Накаджима Ацуши, Рюноскэ Акутагава, Мори Огай, Акико Йосано, Кёка Изуми, Кенджи Миядзава, Акутагава Гин, Ичиё Хигучи, Люси Монтгомери (Уфа)</td></tr>
+  <tr><td>1-21</td><td>GD: Аморальная поддержка - </td></tr>
   <tr><td>1-22</td><td>GD: Starfans Tatarstan - Star Wars - Дарт Вейдер, Люк Скайуокер, Лея Органа, имперский офицер (Казань, Уфа, Набережные Челны)</td></tr>
 	<tr class="B"><td>12:50</td><td>Cover dance</td></tr>
   <tr><td>1-23</td><td>CD: Red Jokers - Weki Meki - COOL (Казань)</td></tr>
@@ -363,19 +387,19 @@
   <tr><td>3-04</td><td>OD: Aisling - Благословение небожителей - Линвэнь (Казань)</td></tr>
   <tr><td>3-05</td><td>OD: Junka - League of Legends - Серафина (Уфа)</td></tr>
   <tr><td>3-06</td><td>OD: невдупленыш - Sky: Дети Света - Skykid (Уфа)</td></tr>
-  <tr><td>3-07</td><td>OD: Lessa - NieR:Automata - 2B (Уфа)<td></tr>
-  <tr><td>3-08</td><td>OD: avelik - Genshin Impact - Aether (Итэр) (Уфа/Москва)<td></tr>
-  <tr><td>3-09</td><td>MGD: Starfans Tatarstan - Star Wars. Mandalorian - Мандалорцы (Казань, Ижевск)<td></tr>
-  <tr><td>3-10</td><td>MGD: Лис Укурыш, Radioactive Daddy - The Elder Scrolls V: Skyrim - Довакин, Телдрин Серо (Челябинск)<td></tr>
-  <tr><td>3-11</td><td>MGD: Neko+Chiral & Overwat - Overwatch - D.VA (Hana Song), Cole Cassidy, Elizabeth Caledonia "Calamity" Ashe (Майями, Ижевск, Набережные Челны)<td></tr>
-  <tr><td>3-12</td><td>OD: LK97 - Genshin Impact. - Dainsleif. (Уфа)<td></tr>
-  <tr><td>3-13</td><td>OD: Rista Eria - Sailor Moon - Сейлор Венера (Пермь)<td></tr>
-  <tr><td>3-14</td><td>OD: Shori_tyan - Клинок, рассекающий демонов - Мицури Канроджи (Челябинск)<td></tr>
-  <tr><td>3-15</td><td>OD: Ласка - Devil May Cry 5 - Lady (Уфа)<td></tr>
-  <tr><td>3-16</td><td>OD: Polina Chrome - Hannah Alexander Art (Final Fantasy VII) - Tifa Lockhart (Уфа)<td></tr>
-  <tr><td>3-17</td><td>OD: MeowDzen - Аватар: Легенда об Аанге - Аанг (Челябинск)<td></tr>
-  <tr><td>3-18</td><td>AD: Neko+Chiral - Houseki no Kuni - Ghost, Bort, Cairngorm, Phosphophyllite, Lapis Lazuli (Ижевск, Пермь)<td></tr>
-  <tr><td>3-19</td><td>AD: 42 - Bleach - Зараки Кенпачи, Ячиру Кусаджиши (Уфа)<td></tr>
+  <tr><td>3-07</td><td>OD: Lessa - NieR:Automata - 2B (Уфа)</td></tr>
+  <tr><td>3-08</td><td>OD: avelik - Genshin Impact - Aether (Итэр) (Уфа/Москва)</td></tr>
+  <tr><td>3-09</td><td>MGD: Starfans Tatarstan - Star Wars. Mandalorian - Мандалорцы (Казань, Ижевск)</td></tr>
+  <tr><td>3-10</td><td>MGD: Лис Укурыш, Radioactive Daddy - The Elder Scrolls V: Skyrim - Довакин, Телдрин Серо (Челябинск)</td></tr>
+  <tr><td>3-11</td><td>MGD: Neshe (Майями, Ижевск, Набережные Челны)</td></tr>
+  <tr><td>3-12</td><td>OD: LK97 - Genshin Impact. - Dainsleif. (Уфа)</td></tr>
+  <tr><td>3-13</td><td>OD: Rista Eria - Sailor Moon - Сейлор Венера (Пермь)</td></tr>
+  <tr><td>3-14</td><td>OD: Shori_tyan - Клинок, рассекающий демонов - Мицури Канроджи (Челябинск)</td></tr>
+  <tr><td>3-15</td><td>OD: Ласка - Devil May Cry 5 - Lady (Уфа)</td></tr>
+  <tr><td>3-16</td><td>OD: Polina Chrome - Hannah Alexander Art (Final Fantasy VII) - Tifa Lockhart (Уфа)</td></tr>
+  <tr><td>3-17</td><td>OD: MeowDzen - Аватар: Легенда об Аанге - Аанг (Челябинск)</td></tr>
+  <tr><td>3-18</td><td>AD: Neko+Chiral - Houseki no Kuni - Ghost, Bort, Cairngorm, Phosphophyllite, Lapis Lazuli (Ижевск, Пермь)</td></tr>
+  <tr><td>3-19</td><td>AD: 42 - Bleach - Зараки Кенпачи, Ячиру Кусаджиши (Уфа)</td></tr>
 	 <tr class="B"><td>17:20</td><td>Вокал и cover dance</td></tr>
   <tr><td>3-20</td><td>CD: ShiWa - Shinhwa- this love (Уфа)</td></tr>
   <tr><td>3-21<3-22/td><td>V: Tinker Bell - Павел Смеян, Татьяна Воронина - Ветер перемен (Пермь)</td></tr>
@@ -421,6 +445,10 @@
      <tr class="B"><th class="block">19:10</th><th class="block">Лотерея</th></tr>
 	 <tr class="B"><th class="block">19:20</th><th class="block">Награждение</th></tr>
 </table></div>
+
+<div id="red" class="tabcontent">
+<div><a href="tel:+7919608-19-69"><img src="help/med.png" alt="МЕДИК"/></a> <a href="tel:+7917744-96-44"><img src="help/tina.png" alt="ВОЛОНТЁРЫ"/></a><a href="tel:+7999132-67-66"><img src="help/sb.png" alt="ОХРАНА"/></a></div>
+</div>
     
     
     
