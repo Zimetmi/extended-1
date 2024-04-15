@@ -221,7 +221,7 @@ font-family:'Trebuchet MS',arial,sans-serif;font-weight:bold;text-shadow:0 -1px 
   transition: all 0.5s ease;
   word-wrap: break-word;
 }
-
+/*
 .smort{
 	background: linear-gradient(#571508, #f06559);
 }
@@ -229,7 +229,7 @@ font-family:'Trebuchet MS',arial,sans-serif;font-weight:bold;text-shadow:0 -1px 
 .block{
   background: linear-gradient(#082254, #5c91f2);	
 }
-
+*/
 
 table {
   margin-left: auto;
