@@ -68,19 +68,497 @@
     <button class="tablinks" onclick="openCity(event, 'table')">Расписание</button> 
 	<button class="tablinks" onclick="openCity(event, 'red')">HELP</button>
     </div>
+    <table id="dataTable" class="table_blur" id="table">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Костюм</th>
+				<th>Похожесть</th>
+				<th>Выход</th>
+				<th>Комментарий</th>
+				<th>Итог</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Данные будут заполнены автоматически -->
+            <!-- Используйте местоимения ${} для вставки значений -->
+        </tbody>
+    </table>
 <!-- <button class="accordion">Хикару</button> <div class="panel"> <div class="card"> <a href="card/Hikaru.jpg" class="lightzoom"><img src="sCard/Hikaru.jpg" /></a> </div> </div> --> 
 <!-- Вкладка 1 -->
 <div id="One" class="tabcontent"><h3>11:30 СМОТР Одиночное дефиле 1й блок - 1 часть</h3>
-	<button class="accordion">03-02	rei - rei - identity v - Emil (patient) (Уфа)</button> <div class = "panel">  <a href="card/03-02.jpg" class = "lightzoom"> <img src = "sCard/03-02.jpg"/></a> </div>
-	<button class="accordion">03-03	Junka - Resident Evil Village - Кассандра Димитреску (Уфа)</button> <div class = "panel">  <a href="card/03-03.jpg" class = "lightzoom"> <img src = "sCard/03-03.jpg"/></a> </div>
-	<button class="accordion">03-04	chokopayechka - Genshin Impact - Gui Zhong (Уфа)</button> <div class = "panel">  <a href="card/03-04.jpg" class = "lightzoom"> <img src = "sCard/03-04.jpg"/></a> </div>
-	<button class="accordion">03-05	Koruii - Genshin Impact - fem!Pantalone (Пермь)</button> <div class = "panel">  <a href="card/03-05.jpg" class = "lightzoom"> <img src = "sCard/03-05.jpg"/></a> </div>
-	<button class="accordion">03-06	Yuki_San - Silent Hill - Pyramid Head (Салават)</button> <div class = "panel">  <a href="card/03-06.jpg" class = "lightzoom"> <img src = "sCard/03-06.jpg"/></a> </div>
-	<button class="accordion">03-07	Jacket - DC Comics - Damian Wayne (Robin) (Чебоксары)</button> <div class = "panel">  <a href="card/03-07.jpg" class = "lightzoom"> <img src = "sCard/03-07.jpg"/></a> </div>
-	<button class="accordion">03-08	Карась - My little pony - Пинки Пай (Уфа)</button> <div class = "panel">  <a href="card/03-08.jpg" class = "lightzoom"> <img src = "sCard/03-08.jpg"/></a> </div>
-	<button class="accordion">03-09	эчпочмак - Хоббит: нежданное путешествие - Трандуил (Уфа)</button> <div class = "panel">  <a href="card/03-09.jpg" class = "lightzoom"> <img src = "sCard/03-09.jpg"/></a> </div>
-	<button class="accordion">03-10	The Usurper - Hazbin Hotel - Валентино (Туймазы)</button> <div class = "panel">  <a href="card/03-10.jpg" class = "lightzoom"> <img src = "sCard/03-10.jpg"/></a> </div>
-	<button class="accordion">03-11	Nao - Hazbin Hotel - Люцифер (Уфа)</button> <div class = "panel">  <a href="card/03-11.jpg" class = "lightzoom"> <img src = "sCard/03-11.jpg"/></a> </div>
+	<button class="accordion">03-02	rei - rei - identity v - Emil (patient) (Уфа)</button> <div class = "panel">  <a href="card/03-02.jpg" class = "lightzoom"> <img src = "sCard/03-02.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB2" data-column="B" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC2" data-column="C" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD2" data-column="D" data-row="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE2" data-column="E" data-row="2">
+    </div></div>
+	</div>
+	<button class="accordion">03-03	Junka - Resident Evil Village - Кассандра Димитреску (Уфа)</button> <div class = "panel">  <a href="card/03-03.jpg" class = "lightzoom"> <img src = "sCard/03-03.jpg"/></a>
+<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB3" data-column="B" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC3" data-column="C" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD3" data-column="D" data-row="3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE3" data-column="E" data-row="3">
+    </div></div>
+	</div>
+	<button class="accordion">03-04	chokopayechka - Genshin Impact - Gui Zhong (Уфа)</button> <div class = "panel">  <a href="card/03-04.jpg" class = "lightzoom"> <img src = "sCard/03-04.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB4" data-column="B" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC4" data-column="C" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD4" data-column="D" data-row="4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE4" data-column="E" data-row="4">
+    </div></div></div>
+	<button class="accordion">03-05	Koruii - Genshin Impact - fem!Pantalone (Пермь)</button> <div class = "panel">  <a href="card/03-05.jpg" class = "lightzoom"> <img src = "sCard/03-05.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB5" data-column="B" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC5" data-column="C" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD5" data-column="D" data-row="5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE5" data-column="E" data-row="5">
+    </div></div></div>
+	<button class="accordion">03-06	Yuki_San - Silent Hill - Pyramid Head (Салават)</button> <div class = "panel">  <a href="card/03-06.jpg" class = "lightzoom"> <img src = "sCard/03-06.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB6" data-column="B" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC6" data-column="C" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD6" data-column="D" data-row="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE6" data-column="E" data-row="6">
+    </div></div></div>
+	<button class="accordion">03-07	Jacket - DC Comics - Damian Wayne (Robin) (Чебоксары)</button> <div class = "panel">  <a href="card/03-07.jpg" class = "lightzoom"> <img src = "sCard/03-07.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB7" data-column="B" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC7" data-column="C" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD7" data-column="D" data-row="7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE7" data-column="E" data-row="7">
+    </div></div></div>
+	<button class="accordion">03-08	Карась - My little pony - Пинки Пай (Уфа)</button> <div class = "panel">  <a href="card/03-08.jpg" class = "lightzoom"> <img src = "sCard/03-08.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB8" data-column="B" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC8" data-column="C" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD8" data-column="D" data-row="8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE8" data-column="E" data-row="8">
+    </div></div></div>
+	<button class="accordion">03-09	эчпочмак - Хоббит: нежданное путешествие - Трандуил (Уфа)</button> <div class = "panel">  <a href="card/03-09.jpg" class = "lightzoom"> <img src = "sCard/03-09.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB9" data-column="B" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC9" data-column="C" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD9" data-column="D" data-row="9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE9" data-column="E" data-row="9">
+    </div></div></div>
+	<button class="accordion">03-10	The Usurper - Hazbin Hotel - Валентино (Туймазы)</button> <div class = "panel">  <a href="card/03-10.jpg" class = "lightzoom"> <img src = "sCard/03-10.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB10" data-column="B" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC10" data-column="C" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD10" data-column="D" data-row="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE10" data-column="E" data-row="10">
+    </div></div></div>
+	<button class="accordion">03-11	Nao - Hazbin Hotel - Люцифер (Уфа)</button> <div class = "panel">  <a href="card/03-11.jpg" class = "lightzoom"> <img src = "sCard/03-11.jpg"/></a> 
+	<div id="inputFields">
+	<div class="input-row"> Оценка костюма
+        <select class="data-input" class="input-field" id="dataB11" data-column="B" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Похожесть персонажа
+        <select class="data-input" class="input-field" id="dataC11" data-column="C" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+	<div class="input-row"> Оценка выступления
+        <select class="data-input" class="input-field" id="dataD11" data-column="D" data-row="11">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <div class="input-row"> Комментарий
+        <input type="text" class="data-input" class="input-field" id="dataE11" data-column="E" data-row="11">
+    </div></div></div>
 </div>
 <!-- Вкладка 2 -->
 <div id="Two" class="tabcontent"><h3>11:30 СМОТР Малое и групповое дефиле 1й блок - 1 часть</h3>
