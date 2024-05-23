@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', async function() {
             const currentTime = new Date().getTime();
             const timeDiff = currentTime - parseInt(cachedTime);
 
-            // Если данные в кеше не устарели (например, менее 15 минут), используем их
-            if (timeDiff < 900000) { // 900000 миллисекунд = 15 минут
+            // Если данные в кеше не устарели (например, менее 7.5 минут), используем их
+            if (timeDiff < 450000) { // 450000 миллисекунд = 7.5 минут
                 return JSON.parse(cachedData);
             }
         }
