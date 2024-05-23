@@ -34,7 +34,7 @@ a {text-decoration: none; color: black;}
 /*.container .png {width: 50px; height: 50px; border: solid;}*/
 .muzhik{position: fixed; bottom: 0; height:70%;  width:auto; right:5%;}
 .tyan{position: fixed;  bottom: 0; height:70%; width:auto; right:-2%;}
-.frame{position:relative; margin-top:10vw; width:clamp(800px, 40vw, 2000px); height:clamp(300px, 8vw, 1080px);}
+
 
 /*Таблицу делаем поверх картинок*/
 .tabcontent {position: relative;}
@@ -45,7 +45,8 @@ h3 {color: white;}
 
 
 /*input*/
-#inputFields {display: flex;margin-left: auto; margin-right: auto; max-width: 1000px; padding-bottom: 1em;}
-.data-input {font-size: 16px; padding: .3em 1.4em .3em .3em;}
+#inputFields {margin-left: auto; margin-right: auto; display:flex;  padding-bottom: 1em; justify-content: center;}
+.data-input {font-size: 16px; }
 select {width: 30%; max-width: 40%; line-height: 1.3; margin: 0; border: 1px solid #aaa;}
-.input-row {font-size: 1.4em;}
+.input-row {font-size: 1.4em; margin-left: 0.7em; margin-right:0.7em;}
+input, textarea, select, button {font-size: 16px;}
