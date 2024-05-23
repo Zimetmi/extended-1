@@ -299,5 +299,5 @@ function openCity(evt, cityName) {
 let text = document.querySelector('.time').textContent;
 console.log(text);
 
-//Ниже код для подключения гугл таблиц
+//Отключение масштабирования активированного поля
 
