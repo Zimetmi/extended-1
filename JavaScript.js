@@ -76,12 +76,13 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 // Функция для сохранения данных
-async function saveData(value, column, row) {
+async function saveData(value, column, row, sheetName = 'DIMAS') {
     const url = 'https://script.google.com/macros/s/AKfycbyAXgt-Q1wikBmbkxVUJ-oqKlG4sIXcVMUt40M2GYx4y_s2b5fFvT0V0LaCXn1sSfPwBA/exec';
     const params = new URLSearchParams({
         column: column,
         row: row,
-        value: value
+        value: value,
+        sheet: sheetName // Передаем название листа
     });
     try {
         const response = await fetch(`${url}?${params.toString()}`);
